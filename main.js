@@ -7,12 +7,13 @@ $('document').ready(function() {
         event.preventDefault();
         const film = ($('.inputBox').val());
         $.getJSON('https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=5&order=relevance&q=mark+kermode+reviews%22' + film + '%22&key=' + apiKey, function(data) {
-          // console.log(data);
           function results() {
             const firstResult = data.items[0];
             const Id = firstResult.id.videoId;
             const description = firstResult.snippet.description;
-            console.log(description);
+            const displayVideo = '<iframe width="460" height="265" src="https://www.youtube.com/embed/' + Id + '" frameborder="0" allowfullscreen></iframe>';
+            $('.display').append(displayVideo);
+            $('.description').append(description);
           }
           results();
         });
