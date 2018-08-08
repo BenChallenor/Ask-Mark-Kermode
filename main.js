@@ -10,7 +10,9 @@ $('document').ready(function() {
           // console.log(data);
           function results() {
             const firstResult = data.items[0];
-            console.log(firstResult);
+            const Id = firstResult.id.videoId;
+            const description = firstResult.snippet.description;
+            console.log(description);
           }
           results();
         });
