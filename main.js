@@ -6,6 +6,10 @@ $('document').ready(function() {
       $('.searchButton').click(function(event) {
         event.preventDefault();
         const film = ($('.inputBox').val());
+        $(".inputBox").val("");
+        $(".display").empty();
+        $(".description").empty();;
+        // clears search results
         $.getJSON('https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=5&order=relevance&q=mark+kermode+reviews%22' + film + '%22&key=' + apiKey, function(data) {
           function results() {
             const firstResult = data.items[0];
