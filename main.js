@@ -1,4 +1,4 @@
-const apiKey = config.API_KEY;
+const apiKey = API_KEY;
 
 $('document').ready(function() {
   const video = {
