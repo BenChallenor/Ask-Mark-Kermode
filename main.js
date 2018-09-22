@@ -1,4 +1,4 @@
-const apiKey = AIzaSyBbN-GHblaJdFKBkw2KSJDmaXaIkhzMTlc;
+const apiKey = "AIzaSyBbN-GHblaJdFKBkw2KSJDmaXaIkhzMTlc";
 
 $('document').ready(function() {
   const video = {
