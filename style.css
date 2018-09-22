@@ -18,17 +18,19 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-
 }
 
 .image {
   height: 100%;
-
 }
 
 .background {
   display: flex;
   flex-direction: column;
+}
+
+.display {
+  margin-left: 25px;
 }
 
 .title {
@@ -37,13 +39,11 @@ body {
   font-size: 100px;
   text-align: center;
   color: white;
-  /* border: 5px solid blue; */
 }
 
 .search-background {
   padding-top: 50px;
   padding-left: 50px;
-  /* border: 5px solid blue; */
 }
 
 input {
@@ -55,7 +55,6 @@ input {
   border: none;
   color: black;
   border-radius: 4px;
-  /* border: 5px solid blue; */
 }
 
 button {
@@ -71,7 +70,6 @@ button {
   font-family: 'Bungee Inline', cursive;
   border-radius: 4px;
   outline: none;
-  /* border: 5px solid blue; */
 }
 
 .result {
@@ -80,13 +78,6 @@ button {
   padding-top: 100px;
   display: flex;
   justify-content: space-between;
-  /* border: 5px solid blue; */
-}
-
-.display {
-  /* padding-top: 60px; */
-  /* border: 5px solid blue; */
-  margin-left: 25px;
 }
 
 .description {
@@ -94,5 +85,74 @@ button {
   height: 70px;
   font-family: 'Bungee Inline', cursive;
   color: white;
-  /* border: 5px solid blue; */
+}
+
+/* mobile */
+@media only screen and (max-width: 1024px) {
+
+  .background {
+    height: 100vh;
+  }
+
+  .display {
+    margin-left: 0;
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.27198%;
+  }
+
+  iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .title {
+    padding-top: 0;
+    font-size: 3.5rem;
+    margin-top: 15%;
+  }
+
+  .search-background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0;
+    padding-left: 0;
+  }
+
+  input {
+    font-size: 10px;
+    padding: 15px 80px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  button {
+    margin-left: 0;
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+
+  .result {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .description {
+    width: auto;
+    height: auto;
+    align-items: center;
+    font-size: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
