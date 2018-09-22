@@ -18,6 +18,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+
 }
 
 .image {
@@ -125,8 +126,8 @@ button {
   }
 
   input {
-    font-size: 10px;
-    padding: 15px 80px;
+    font-size: 16px;
+    padding: 5px 10px;
     text-align: center;
     margin-bottom: 10px;
   }
